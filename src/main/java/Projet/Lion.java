@@ -9,14 +9,6 @@ public class Lion extends Animaux {
         super(0,12,"Carnivore");
     }
 
-    public void start(Stage lions) {
-        TextField nbLions = new TextField();
-        nbLions.setId("nbLion");
-
-        for(i = 0; i < nbLions; i++){
-            Lion lion = new Lion();
-        }
-    }
 
 
 
