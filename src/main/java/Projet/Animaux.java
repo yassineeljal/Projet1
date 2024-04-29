@@ -1,24 +1,36 @@
 package Projet;
 
+import java.util.ArrayList;
+
 public class Animaux {
 
     protected int age;
-    protected int esperenceVie;
+    protected int esperanceVie;
     protected String type;
+    protected boolean ken;
 
 
-    public Animaux( int age, int esperenceVie, String type ) {
+    public void augmentationAge() {
+       if (age <= esperanceVie) {
+           age++;
+       }
+    };
+
+
+    public Animaux(int age, int esperanceVie, String type, boolean ken) {
         this.age = age;
-        this.esperenceVie = esperenceVie;
+        this.esperanceVie = esperanceVie;
         this.type = type;
+        this.ken = ken;
     }
 
     public boolean estMort(){
-        if (age > esperenceVie){
+        if (age > esperanceVie){
             return true;
         }
         else {
             return false;
         }
+
     }
 }

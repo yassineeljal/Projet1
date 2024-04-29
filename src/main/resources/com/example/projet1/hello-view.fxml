@@ -11,7 +11,7 @@
       <Label layoutX="300.0" layoutY="29.0" text="antilope" />
       <Label layoutX="132.0" layoutY="81.0" text="Metre carre d'herbe" />
       <TextField id="herbe" layoutX="270.0" layoutY="77.0" />
-      <Button id="Envoyer" layoutX="461.0" layoutY="77.0" mnemonicParsing="false" text="Envoyer" />
+      <Button id="Envoyer" layoutX="461.0" layoutY="77.0" mnemonicParsing="false" onAction="#onClickEnvoyer" text="Envoyer" />
       <Button layoutX="17.0" layoutY="141.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="133.0" text="Faire passer 1 an" />
       <Button layoutX="17.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Initier la chaine" />
       <Label layoutX="289.0" layoutY="141.0" text="Lion" />
