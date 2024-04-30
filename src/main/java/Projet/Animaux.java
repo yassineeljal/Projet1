@@ -32,7 +32,4 @@ public class Animaux {
 
     }
 
-    public void reproduction(){
-
-    }
 }

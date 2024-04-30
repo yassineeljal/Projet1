@@ -37,5 +37,15 @@ public class Organisateur {
         }
     }
 
+    public void reproduction(){
+        for (Animaux animal: animaux) {
+            if (animal.age > 2){
+                animal.peutReproduire = true;
+            }
+            if(animal.peutReproduire){
 
-}
+            }
+
+            }
+        }
+    }
