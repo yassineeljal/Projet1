@@ -12,12 +12,16 @@ public class Organisateur {
     }
 
     ArrayList<Animaux> animaux = new ArrayList<Animaux>();
+    ArrayList<Animaux> vivant = new ArrayList<Animaux>();
 
     public void vieillir() {
         for (Animaux animal: animaux) {
             animal.augmentationAge();
-            animal.estMort();
+            if(!animal.estMort()){
+                vivant.add(animal);
+            }
         }
+        animaux = vivant;
     }
 
     public void reproduir(){
@@ -26,9 +30,12 @@ public class Organisateur {
         }
     }
 
-    public void graille(){
+    Herbe herbe = new Herbe();
+    public void manger(){
         for (Animaux animal: animaux) {
 
         }
     }
+
+
 }

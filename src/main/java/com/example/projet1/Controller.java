@@ -3,6 +3,7 @@ package com.example.projet1;
 import Projet.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
@@ -14,13 +15,39 @@ public class Controller {
     @FXML
     private TextField antilope;
 
-
-
     @FXML
     private TextField herbe;
 
     @FXML
     private Button Envoyer;
+
+    @FXML
+    private Button plus1an;
+
+    @FXML
+    private Button initier;
+
+    @FXML
+    private Label anneeEnCours;
+    @FXML
+    private Label lionsEnVies;
+
+    @FXML
+    private Label antilopesEnVies;
+
+    @FXML
+    private Label lionsNes;
+
+    @FXML
+    private Label lionsMorts;
+
+    @FXML
+    private Label antilopesNes;
+
+    @FXML
+    private Label antilopesMorts;
+
+
 
 
     Herbe herbe1 = new Herbe();

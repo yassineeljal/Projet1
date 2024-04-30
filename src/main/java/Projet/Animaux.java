@@ -1,13 +1,11 @@
 package Projet;
 
-import java.util.ArrayList;
-
 public class Animaux {
 
     protected int age;
     protected int esperanceVie;
     protected String type;
-    protected boolean ken;
+    protected boolean peutReproduire;
 
 
     public void augmentationAge() {
@@ -17,11 +15,11 @@ public class Animaux {
     };
 
 
-    public Animaux(int age, int esperanceVie, String type, boolean ken) {
+    public Animaux(int age, int esperanceVie, String type, boolean peutReproduire) {
         this.age = age;
         this.esperanceVie = esperanceVie;
         this.type = type;
-        this.ken = ken;
+        this.peutReproduire = peutReproduire;
     }
 
     public boolean estMort(){
@@ -31,6 +29,10 @@ public class Animaux {
         else {
             return false;
         }
+
+    }
+
+    public void reproduction(){
 
     }
 }
