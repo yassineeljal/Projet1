@@ -15,6 +15,7 @@ public class Organisateur {
     ArrayList<Animaux> vivant = new ArrayList<Animaux>();
 
     public void vieillir() {
+        vivant.clear();
         for (Animaux animal: animaux) {
             animal.augmentationAge();
             if(!animal.estMort()){
@@ -22,11 +23,16 @@ public class Organisateur {
             }
         }
         animaux = vivant;
+        vivant.clear();
     }
 
-    public void reproduir(){
+    public void reproduirLion(){
         for (Animaux animal: animaux) {
+            if(animal.getType().equals("Lion")){
+                animal.reproduction();
 
+
+            }
         }
     }
 
@@ -36,16 +42,4 @@ public class Organisateur {
 
         }
     }
-
-    public void reproduction(){
-        for (Animaux animal: animaux) {
-            if (animal.age > 2){
-                animal.peutReproduire = true;
-            }
-            if(animal.peutReproduire){
-
-            }
-
-            }
-        }
-    }
+}

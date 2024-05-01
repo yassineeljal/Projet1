@@ -7,6 +7,13 @@ public class Animaux {
     protected String type;
     protected boolean peutReproduire;
 
+    public void reproduction(){
+        if (age > 2){
+            peutReproduire = true;
+        }
+
+    }
+
 
     public void augmentationAge() {
        if (age <= esperanceVie) {
@@ -32,4 +39,35 @@ public class Animaux {
 
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public int getEsperanceVie() {
+        return esperanceVie;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public boolean isPeutReproduire() {
+        return peutReproduire;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setEsperanceVie(int esperanceVie) {
+        this.esperanceVie = esperanceVie;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPeutReproduire(boolean peutReproduire) {
+        this.peutReproduire = peutReproduire;
+    }
 }

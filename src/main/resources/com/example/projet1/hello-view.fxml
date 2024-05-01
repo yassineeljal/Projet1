@@ -13,9 +13,8 @@
       <Label layoutX="300.0" layoutY="29.0" text="antilope" />
       <Label layoutX="132.0" layoutY="81.0" text="Metre carre d'herbe" />
       <TextField id="herbe" layoutX="270.0" layoutY="77.0" />
-      <Button id="Envoyer" layoutX="461.0" layoutY="77.0" mnemonicParsing="false" onAction="#onClickEnvoyer" text="Envoyer" />
-      <Button id="plus1an" layoutX="17.0" layoutY="141.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="133.0" text="Faire passer 1 an" />
-      <Button id="initier" layoutX="17.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Initier la chaine" />
+      <Button id="Envoyer" layoutX="461.0" layoutY="77.0" mnemonicParsing="false" onAction="#onClickEnvoyer" text="Initier la chaine" />
+      <Button id="plus1an" layoutX="17.0" layoutY="171.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="133.0" text="Faire passer 1 an" />
       <Label layoutX="289.0" layoutY="141.0" text="Lion" />
       <Label layoutX="355.0" layoutY="141.0" text="antilope" />
       <Label layoutX="14.0" layoutY="271.0" text="Année en cours :" />
@@ -29,5 +28,7 @@
       <Label id="lionsMorts" layoutX="297.0" layoutY="245.0" text="0" />
       <Label id="antilopesNes" layoutX="374.0" layoutY="204.0" text="0" />
       <Label id="antilopesMorts" layoutX="374.0" layoutY="245.0" text="0" />
+      <Label layoutX="449.0" layoutY="117.0" prefHeight="25.0" prefWidth="89.0" text="Herbes restant" />
+      <Label id="antilopesEnVies" layoutX="551.0" layoutY="121.0" prefHeight="17.0" prefWidth="7.0" text="0" />
    </children>
 </AnchorPane>
