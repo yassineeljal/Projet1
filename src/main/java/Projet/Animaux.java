@@ -1,5 +1,7 @@
 package Projet;
 
+import java.util.ArrayList;
+
 public class Animaux {
 
     protected int age;
@@ -28,6 +30,12 @@ public class Animaux {
         this.type = type;
         this.peutReproduire = peutReproduire;
     }
+    public void manger(ArrayList<Animaux> animaux){
+
+    }
+    public void manger(Herbe  herbe){
+
+    }
 
     public boolean estMort(){
         if (age > esperanceVie){
@@ -37,6 +45,9 @@ public class Animaux {
             return false;
         }
 
+    }
+    public boolean estMangeable() {
+        return false;
     }
 
     public int getAge() {

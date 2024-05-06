@@ -26,7 +26,7 @@ public class Organisateur {
         vivant.clear();
     }
 
-    public void reproduirLion(){
+    public void reproduir(){
         for (Animaux animal: animaux) {
             if(animal.getType().equals("Lion")){
                 animal.reproduction();
@@ -36,9 +36,15 @@ public class Organisateur {
         }
     }
 
-    Herbe herbe = new Herbe();
     public void manger(){
+        vivant.clear();
         for (Animaux animal: animaux) {
+            if(animal.getType().equals("Lion")){
+                animal.manger(animaux);
+            }
+            else {
+                animal.manger();
+            }
 
         }
     }
