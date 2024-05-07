@@ -9,7 +9,6 @@ public class Herbe {
 
     public void setMetreCarre(int metreCarre) {
         this.metreCarre = metreCarre;
-
     }
 
     public void reproductionHerbe(){

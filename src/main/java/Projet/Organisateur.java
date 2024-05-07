@@ -30,22 +30,25 @@ public class Organisateur {
         for (Animaux animal: animaux) {
             if(animal.getType().equals("Lion")){
                 animal.reproduction();
-
-
             }
         }
     }
+
 
     public void manger(){
         vivant.clear();
         for (Animaux animal: animaux) {
             if(animal.getType().equals("Lion")){
                 animal.manger(animaux);
+                vivant.add(animal);
             }
             else {
-                animal.manger();
+                animal.manger(animaux);
+                vivant.add(animal);
             }
 
         }
+        animaux = vivant;
+        vivant.clear();
     }
 }
