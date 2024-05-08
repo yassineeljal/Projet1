@@ -7,15 +7,23 @@ public class Animaux {
     protected int age;
     protected int esperanceVie;
     protected String type;
-    protected boolean peutReproduire;
+    protected boolean reproductionFiniPourannee = false;
 
-    public void reproduction(){
-        if (age > 2){
-            peutReproduire = true;
-        }
-
+    public boolean isReproductionFiniPourannee() {
+        return reproductionFiniPourannee;
     }
 
+    public void setReproductionFiniPourannee(boolean reproductionFiniPourannee) {
+        this.reproductionFiniPourannee = reproductionFiniPourannee;
+    }
+
+    public boolean reproduction() {
+        if (age > 2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public void augmentationAge() {
        if (age <= esperanceVie) {
@@ -24,12 +32,13 @@ public class Animaux {
     };
 
 
-    public Animaux(int age, int esperanceVie, String type, boolean peutReproduire) {
+    public Animaux(int age, int esperanceVie, String type, boolean reproductionFiniPourannee) {
         this.age = age;
         this.esperanceVie = esperanceVie;
         this.type = type;
-        this.peutReproduire = peutReproduire;
+        this.reproductionFiniPourannee = reproductionFiniPourannee;
     }
+
     public void manger(ArrayList<Animaux> animaux){
 
     }
@@ -62,10 +71,6 @@ public class Animaux {
         return type;
     }
 
-    public boolean isPeutReproduire() {
-        return peutReproduire;
-    }
-
     public void setAge(int age) {
         this.age = age;
     }
@@ -78,7 +83,4 @@ public class Animaux {
         this.type = type;
     }
 
-    public void setPeutReproduire(boolean peutReproduire) {
-        this.peutReproduire = peutReproduire;
-    }
 }

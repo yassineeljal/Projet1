@@ -19,9 +19,6 @@ public class Controller {
     private TextField herbe;
 
     @FXML
-    private Button Envoyer;
-
-    @FXML
     private Button plus1an;
 
     @FXML
@@ -54,7 +51,12 @@ public class Controller {
     Organisateur org = new Organisateur();
 
     @FXML
-    protected void onClickEnvoyer() {
+    public void fairePasser1an(){
+
+    }
+
+    @FXML
+    public void onClickEnvoyer(ArrayList<Animaux> animaux) {
         int nbrLion = Integer.parseInt(lion.getText());
         int nbrAntilope = Integer.parseInt(antilope.getText());
         int nbrHerbe = Integer.parseInt(herbe.getText());
@@ -62,12 +64,10 @@ public class Controller {
         herbe1.setMetreCarre(nbrHerbe);
 
         for (int i = 0; i < nbrLion; i++) {
-            Lion lion = new Lion();
-            org.getAnimaux().add(lion);
+            animaux.add(new Lion());
         }
         for (int i = 0; i < nbrAntilope; i++) {
-            Antilopes antilope = new Antilopes();
-            org.getAnimaux().add(antilope);
+            animaux.add(new Antilopes());
         }
     }
 }

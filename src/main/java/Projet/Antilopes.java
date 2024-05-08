@@ -1,11 +1,9 @@
 package Projet;
 
 
-import java.util.ArrayList;
-
 public class Antilopes extends Animaux {
     public Antilopes() {
-        super(0, 10, "Antilope", false);
+        super(0, 10, "Antilope",false);
     }
 
     @Override
@@ -23,7 +21,7 @@ public class Antilopes extends Animaux {
                 herbe.setMetreCarre(herbe.getMetreCarre() - 100);
             }
             else {
-                herbe.setMetreCarre(herbe.getMetreCarre() - herbe.getMetreCarre());
+                herbe.setMetreCarre(0);
                 this.age = 100;
             }
         }

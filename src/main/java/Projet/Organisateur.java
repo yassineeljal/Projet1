@@ -26,13 +26,36 @@ public class Organisateur {
         vivant.clear();
     }
 
-    public void reproduir(){
+    public void reproduirLion(){
         for (Animaux animal: animaux) {
-            if(animal.getType().equals("Lion")){
-                animal.reproduction();
+            if(animal.getType().equals("Lion") && (!animal.isReproductionFiniPourannee())){
+                if(animal.reproduction()){
+                    for(Animaux animal2: animaux)
+                        if(animal.getType().equals("Lion") && !animal2.equals(animal) && (!animal2.isReproductionFiniPourannee())){
+                            animaux.add(new Lion());
+                            animal.setReproductionFiniPourannee(true);
+                            animal2.setReproductionFiniPourannee(true);
+                            break;
+                    }
+                }
+            }
+        }
+        for (Animaux animal3: animaux) {
+            if(animal3.getType().equals("Antilope") && (!animal3.isReproductionFiniPourannee())){
+                if(animal3.reproduction()){
+                    for(Animaux animal4: animaux)
+                        if(animal4.getType().equals("Antilope") && !animal4.equals(animal3) && (!animal4.isReproductionFiniPourannee())){
+                            animaux.add(new Lion());
+                            animal3.setReproductionFiniPourannee(true);
+                            animal4.setReproductionFiniPourannee(true);
+                            break;
+                        }
+                }
             }
         }
     }
+
+
 
 
     public void manger(){
