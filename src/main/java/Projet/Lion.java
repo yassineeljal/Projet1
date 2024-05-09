@@ -20,8 +20,14 @@ public class Lion extends Animaux{
                 }
             }
         }
-}
+    }
 
-
-
+    @Override
+    public void reproduire(ArrayList<Animaux> animaux) {
+        if (reproduction() && !isReproductionFiniPourannee()) {
+            animaux.add(new Lion());
+            setReproductionFiniPourannee(true);
+            setReproductionFiniPourannee(true);
+        }
+    }
 }

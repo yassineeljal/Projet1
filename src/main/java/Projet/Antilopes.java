@@ -1,6 +1,8 @@
 package Projet;
 
 
+import java.util.ArrayList;
+
 public class Antilopes extends Animaux {
     public Antilopes() {
         super(0, 10, "Antilope",false);
@@ -35,5 +37,14 @@ public class Antilopes extends Animaux {
             return false;
         }
 
+    }
+
+    @Override
+    public void reproduire(ArrayList<Animaux> animaux){
+        if (reproduction() && !isReproductionFiniPourannee()) {
+            animaux.add(new Antilopes());
+            setReproductionFiniPourannee(true);
+            setReproductionFiniPourannee(true);
+        }
     }
 }

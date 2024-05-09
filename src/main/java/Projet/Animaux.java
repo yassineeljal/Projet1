@@ -45,6 +45,9 @@ public class Animaux {
     public void manger(Herbe  herbe){
 
     }
+    public void reproduire(ArrayList<Animaux> animaux){
+
+    }
 
     public boolean estMort(){
         if (age > esperanceVie){
@@ -53,8 +56,9 @@ public class Animaux {
         else {
             return false;
         }
-
     }
+
+
     public boolean estMangeable() {
         return false;
     }
